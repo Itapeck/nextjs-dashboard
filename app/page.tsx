@@ -4,6 +4,14 @@ import Link from 'next/link';
 import styles from '@/app/ui/home.module.css';
 import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+  description: 'Your Acme Dashboard',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh')
+};
+
 
 export default function Page() {
   return (
@@ -48,7 +56,7 @@ export default function Page() {
             width={560}
             height={620}
             className="block md:hidden"
-            />
+          />
         </div>
       </div>
     </main>
